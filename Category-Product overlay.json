@@ -1,0 +1,208 @@
+{
+  "header": {
+    "statusCode": 200,
+    "errorCode": 0,
+    "version": 0,
+    "message": ""
+  },
+  "payload": {
+    "count": 20,
+    "pageNo": 0,
+    "pageSize": 20,
+    "results": [
+      {
+        "categoryId": 84,
+        "categoryName": "Camera",
+        "productServices": [
+          {
+            "productId": 25,
+            "productName": "Test Product",
+            "productDescription": "234234234234",
+            "productNote": "34",
+            "productPrice": 34,
+            "productMaintenancePer": 34,
+            "productMaintenanceAmt": 11.56,
+            "cost": 34
+          },
+          {
+            "productId": 26,
+            "productName": "Test product",
+            "productNote": "Nktes",
+            "productPrice": 12,
+            "productMaintenancePer": 1,
+            "productMaintenanceAmt": 0.12,
+            "cost": 173
+          }
+        ],
+        "categories": [
+          {
+            "categoryId": 85,
+            "categoryName": "Canon"
+          },
+          {
+            "categoryId": 86,
+            "categoryName": "Nikon"
+          },
+          {
+            "categoryId": 91,
+            "categoryName": "N-12"
+          }
+        ]
+      },
+      {
+        "categoryId": 60,
+        "categoryName": "Cate 15062017125420",
+        "productServices": [
+          {
+            "productId": 24,
+            "productName": "Product 15062017125420",
+            "productDescription": "Product Description 15062017125454",
+            "productNote": "Product Notes Updated",
+            "productPrice": 1526,
+            "productMaintenancePer": 25,
+            "productMaintenanceAmt": 381.5,
+            "cost": 12365
+          },
+          {
+            "productId": 25,
+            "productName": "Test Product",
+            "productDescription": "234234234234",
+            "productNote": "34",
+            "productPrice": 34,
+            "productMaintenancePer": 34,
+            "productMaintenanceAmt": 11.56,
+            "cost": 34
+          }
+        ],
+        "categories": [
+          {
+            "categoryId": 61,
+            "categoryName": "SubCate 15062017125420"
+          }
+        ]
+      },
+      {
+        "categoryId": 17,
+        "categoryName": "Equipment",
+        "productServices": [
+          {
+            "productId": 17,
+            "productName": "DSLR 1200D",
+            "productDescription": "Test",
+            "productNote": "12121212",
+            "productPrice": 12212,
+            "productMaintenancePer": 12,
+            "productMaintenanceAmt": 1465.44,
+            "cost": 12121
+          },
+          {
+            "productId": 20,
+            "productName": "DSLR Lens 500 MM",
+            "productDescription": "Test",
+            "productNote": "120",
+            "productPrice": 120,
+            "productMaintenancePer": 12,
+            "productMaintenanceAmt": 14.4,
+            "cost": 125
+          },
+          {
+            "productId": 21,
+            "productName": "Mobile 001",
+            "productDescription": "Test",
+            "productNote": "1212121",
+            "productPrice": 1221,
+            "productMaintenancePer": 21,
+            "productMaintenanceAmt": 256.41,
+            "cost": 12121
+          },
+          {
+            "productId": 27,
+            "productName": "Sample Product",
+            "productNote": "Notest",
+            "productPrice": 12,
+            "productMaintenancePer": 12,
+            "productMaintenanceAmt": 1.44,
+            "cost": 12
+          }
+        ],
+        "categories": [
+          {
+            "categoryId": 19,
+            "categoryName": "Camera"
+          },
+          {
+            "categoryId": 20,
+            "categoryName": "DSLR"
+          }
+        ]
+      },
+      {
+        "categoryId": 18,
+        "categoryName": "Miscellaneous",
+        "productServices": [
+          {
+            "productId": 18,
+            "productName": "Camera DSLR 800MM",
+            "productDescription": "Test",
+            "productNote": "1212121",
+            "productPrice": 12121,
+            "productMaintenancePer": 21,
+            "productMaintenanceAmt": 2545.41,
+            "cost": 12
+          },
+          {
+            "productId": 21,
+            "productName": "Mobile 001",
+            "productDescription": "Test",
+            "productNote": "1212121",
+            "productPrice": 1221,
+            "productMaintenancePer": 21,
+            "productMaintenanceAmt": 256.41,
+            "cost": 12121
+          }
+        ],
+        "categories": [
+          
+        ]
+      },
+      {
+        "categoryId": 98,
+        "categoryName": "N\/A",
+        "productServices": [
+          {
+            "productId": 28,
+            "productName": "N\/A",
+            "productPrice": 100,
+            "productMaintenancePer": 0,
+            "productMaintenanceAmt": 0,
+            "cost": 0
+          }
+        ],
+        "categories": [
+          
+        ]
+      },
+      {
+        "categoryId": 15,
+        "categoryName": "Stage",
+        "productServices": [
+          {
+            "productId": 19,
+            "productName": "Camera DSLR 850MM",
+            "productDescription": "Test",
+            "productNote": "Testing",
+            "productPrice": 1232,
+            "productMaintenancePer": 12,
+            "productMaintenanceAmt": 147.84,
+            "cost": 12
+          }
+        ],
+        "categories": [
+          
+        ]
+      }
+    ]
+  }
+}
+
+

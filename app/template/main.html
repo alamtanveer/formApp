@@ -1,0 +1,183 @@
+<div class="topBar">
+  <div class="col-sm-3 col-md-3 col-lg-2"></div>
+  <div class="col-sm-9 col-md-9 col-lg-10">
+   <button type="button" class="Ham-navbar-toggle collapsed" ng-click="hamburger()">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+   </button> 
+  <span class="logout">Logout</span>
+  </div>
+</div>
+<div class="mainWrapper container-fluid">
+  <row>
+    <div ng-if="visible" class="leftPanel col-sm-3 col-md-3 col-lg-2">
+        <div class="userDetails">
+            <div class="userImage"></div>
+            <div class="userName">{{username}}</div>
+            <div class="userJob">{{designation}}</div>
+        </div>
+        <div>
+          <ul>
+            <li ng-class="{active: item=='Vendors'}" ng-repeat="item in listItem">
+            {{item}}
+             <!--  <a ng-class="{active: item=='Vendors'}" href="">{{item}}</a> -->
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div id="rightPanel" class="col-sm-9 col-md-9 col-lg-10">
+        <div id="vendorFormTopBar">
+          <span>Add Vendor | This form adds vendors</span>
+          <p><span>Home > Vendor > </span><span>Add Vendor</span></p>
+        </div>
+
+        <form role="form">
+
+          <div id="personalDetails">Personal Details</div>
+          <div class="frm1">
+            <div class="form-group">
+              <label for="company name">Company Name </label>
+              <input type="text" class="form-control" id="txtCompany" ng-model="vendorData.companyName" placeholder="Enter Company Name" required>
+            </div>
+            <div class="form-group">
+              <label for="legal name">Legal Name</label>
+              <input type="text" class="form-control" id="legalName" ng-model="vendorData.legalName" placeholder="Enter Legal Name" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="Address" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="text" class="form-control" id="phoneNumber" ng-model="vendorData.phoneNo" placeholder="Enter Phone Number" required>
+            </div>
+             <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" id="emailId" ng-model="vendorData.emailId" placeholder="Enter email" required>
+            </div>
+            <div class="dropdown form-group">
+              <select name="cars" class="form-control">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+             <div class="form-group">
+              <label for="vendorId">Vendor Id</label>
+              <input type="text" class="form-control" id="vendorId" ng-model="vendorData.vendorOfficialId" placeholder="Enter Vendor Id" required>
+            </div>
+          </div>
+
+          <div id="personalDetails">Legal Representative Details</div>
+          <div class="frm1 form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control" id="txtName" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="entEmail" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="cell" placeholder="Enter Phone">
+            </div>
+          </div>
+
+          <div id="personalDetails">Product / Services Selection</div>
+          <div class="frm1">
+            <div class="form-group">
+              <label for="company name">Vendor Type</label>
+              <div class="dropdown form-group">
+                <select name="cars" class="form-control">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="legal name">Select Product</label>
+              <div class="form-control selectProduct">
+                
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Lead Days">Lead Days</label>
+              <input type="number" class="form-control" id="leadDays" ng-model="vendorData.leadDay" placeholder="Enter Lead Days" required>
+            </div>
+             <div class="form-group">
+              <label for="Quantity">Quantity</label>
+              <input type="number" class="form-control" id="Quantity" ng-model="vendorData.quantity" placeholder="Enter Quantity" required>
+            </div>          
+          </div>
+
+          <div id="personalDetails">Financial Details</div>
+          <div class="frm1">
+            <div class="form-group">
+              <label for="A/C name">A/C Name</label>
+              <input type="text" class="form-control" id="acName" ng-model="vendorData.accountName" placeholder="Enter A/C Name" required>
+            </div>
+            <div class="form-group">
+              <label for="A/C number">A/C Number</label>
+              <input type="text" class="form-control" id="acNumber" ng-model="vendorData.accountNumber" placeholder="Enter A/C Number" required>
+            </div>
+            <div class="form-group">
+              <label for="Bank name">Bank Name</label>
+              <input type="text" class="form-control" id="BankName" ng-model="vendorData.bankName" placeholder="Enter Bank Name" required>
+            </div>            
+            <div class="form-group">
+              <label for="branchName">Branch Name</label>
+              <input type="text" class="form-control" id="branchName" ng-model="vendorData.branchName" placeholder="Enter Branch Name" required>
+            </div>
+            <div class="form-group">
+              <label for="clabe">CLABE</label>
+              <input type="text" class="form-control" id="clabe" ng-model="vendorData.clabe" placeholder="Enter CLABE" required>
+            </div>
+            <div class="form-group">              
+              <input type="text" class="form-control" id="branchName" placeholder="Swift Code">
+            </div>
+            <div class="form-group">              
+              <input type="text" class="form-control" id="branchName" placeholder="ABA Code">
+            </div>
+            <div class="form-group">              
+              <input type="text" class="form-control" id="branchName" placeholder="Sort Code">
+            </div>
+            <div class="form-group">
+              <label for="rfcCode">RFC Code</label>              
+              <input type="text" class="form-control" id="branchName" ng-model="vendorData.rfcCode" placeholder="RFC Code" required>
+            </div>           
+          </div>
+
+          <div id="personalDetails">Payment Terms</div>
+          <div class="frm1">            
+            <div class="form-group">
+              <label for="Payment after days">Payment after days</label>
+              <input type="number" class="form-control" id="payDueDays" ng-model="vendorData.paymentAfterDays" placeholder="Enter Payment after days" required>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="cntDetails" placeholder="Enter Contact Details">
+            </div>                
+          </div>
+
+          <div id="personalDetails">Tax Data</div>
+          <div class="frm1">            
+            <div class="form-group">
+              <label for="Payment after days">Tax ID</label>
+              <input type="number" class="form-control" id="payDueDays" placeholder="Enter Tax ID" required>
+            </div>
+            <div class="form-group">
+              <label for="Company ID">Company ID</label>
+              <input type="number" class="form-control" id="compId" placeholder="Enter Company ID">
+            </div>     
+            <div class="form-group">
+              <label for="Attachements">Attachements</label>              
+            </div>              
+          </div>          
+          <button type="submit" class="btn btn-success">Save</button>
+          <button type="submit" class="btn btn-danger">Cancel</button>
+        </form>
+    </div>
+    <div product></div>
+  </row>
+</div>

@@ -1,0 +1,75 @@
+{
+  "header": {
+    "statusCode": 200,
+    "errorCode": 0,
+    "version": 0,
+    "message": "Vendor fetched successfully"
+  },
+  "payload": {
+    "result": {
+      "vendorId": 314,
+      "companyName": "Christian",
+      "legalName": "Christiano",
+      "phoneNo": "0000000000314",
+      "emailId": "ztar@gmail.com",
+      "vendorType": 1,
+      "leadDay": 0,
+      "quantity": 0,
+      "accountName": "Christian",
+      "accountNumber": "1239562222",
+      "bankName": "Bancomer",
+      "branchName": "N\/A",
+      "clabe": "000000000000000000",
+      "rfcCode": "MUAC820813",
+      "paymentAfterDays": 0,
+      "taxId": "0",
+      "companyId": "0",
+      "vendorOfficialId": "V047",
+      "userAddedOn": "2017-07-05T13:08:05.000Z",
+      "userModifiedOn": "2017-07-07T12:57:05.000Z",
+      "userStatus": 1,
+      "contactPersons": [
+        
+      ],
+      "productServices": [
+        {
+          "productId": 28,
+          "productName": "N\/A",
+          "productPrice": 100,
+          "productMaintenance": 0,
+          "status": 1,
+          "categories": [
+            {
+              "categoryId": 98,
+              "categoryName": "N\/A",
+              "categories": [
+                
+              ],
+              "createdBy": 0,
+              "updatedBy": 0,
+              "parentCategoryId": 98
+            }
+          ]
+        }
+      ],
+      "taxAttachments": [
+        
+      ],
+      "vendorAttachments": [
+        
+      ],
+      "modifiedBy": 3,
+      "createdBy": 35,
+      "classification": {
+        "classificationId": 2,
+        "classificationName": "2 Recommendation",
+        "status": 1
+      },
+      "contracts": [
+        
+      ]
+    }
+  }
+}
+
+

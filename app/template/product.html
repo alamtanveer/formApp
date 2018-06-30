@@ -1,0 +1,39 @@
+<!-- Modal -->
+  <div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+          <div class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" id="searcProduct" ng-model="txtsrch" placeholder="Search text">
+              </div>
+          </div>
+          <hr>
+        <div class="modal-body">
+          <div class="categoryWrapper col-md-4" ng-repeat="item in categoryProduct.results|filter:txtsrch">
+              <div class="categoryTitle">
+                     <div class="checkbox">
+                      <label><input name="parent" type="checkbox" class="cboxTitle"><span>{{item.categoryName}}</span></label>
+                    </div>
+                                  
+                  <ul >
+                    <li ng-repeat="prd in item.productServices" class="prolistItem">
+                       <div class="checkbox">
+                          <label><input class="child" type="checkbox"><span>{{prd.productName}}</span></label>
+                       </div>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="btnOk">ok</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  
